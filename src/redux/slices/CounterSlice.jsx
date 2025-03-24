@@ -19,3 +19,8 @@ export const CounterSlice = createSlice({
     }
 
 });
+
+//if we need to take out the implementations of functions from the slice, then we can take that from action creator
+export const {increment, decrement} = CounterSlice.actions;
+//taking out the reducer/functionality
+export default CounterSlice.reducer;
