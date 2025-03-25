@@ -5,16 +5,16 @@ import {createSlice} from "@reduxjs/toolkit"
 const initialState={
     value:0,
 }
-export const CounterSlice = createSlice({
+export const CounterSlice = createSlice({  //creating a slice
     name:"counter",
     initialState,
     
-    reducers:{ //we will define functionalities here
-        increment:(state)=>{
-            state.value+=1;
+    reducers: { //we will define functionalities here
+        increment : (state)=>{
+            state.value += 1;
         },
-        decrement:(state)=>{
-            state.value-=1;
+        decrement : (state)=>{
+            state.value -= 1;
         }
     }
 
